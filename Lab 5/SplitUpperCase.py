@@ -1,8 +1,8 @@
 import re
 
 def split_at_uppercase(input_string):
-    result = re.split(r'(?=[A-Z])', input_string)
-    return result
+    result = re.split(r'(?=[A-Z])[a-z]*', input_string)
+    return result[1:]
 
 
 input_string = input("Enter a string: ")
