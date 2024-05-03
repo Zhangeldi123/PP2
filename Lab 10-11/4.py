@@ -16,7 +16,7 @@ conn = get_connection()
 curr = conn.cursor()
   
 # EXECUTE THE SQL QUERY
-curr.execute("SELECT * FROM students;")
+curr.execute("SELECT * FROM notebook;")
   
 # FETCH ALL THE ROWS FROM THE CURSOR
 data = curr.fetchall()

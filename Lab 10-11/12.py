@@ -10,7 +10,7 @@ def check_name(name):
 
 
 def check_score(name):
-    cur.execute("SELECT name, score, level from SNAKE")
+    cur.execute("SELECT name, score, level from snake")
     row = cur.fetchall()
     for rows in row:
         if name == rows[0]:
@@ -22,7 +22,7 @@ def check_score(name):
 global con, cur
 
 con = psycopg2.connect(
-    database='postgres',
+    database='test',
     user='postgres',
     password='pCak)B*a',
     host="localhost",

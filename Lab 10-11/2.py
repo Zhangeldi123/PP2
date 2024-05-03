@@ -9,11 +9,11 @@ config = psycopg2.connect(
 current = config.cursor()
 current.execute(
     '''
-    CREATE TABLE notebook (
-        id INTEGER PRIMARY KEY(10)
-        numbers VARCHAR(20),
-        email VARCHAR (20)
-    );    
+    CREATE TABLE notebook(
+        id INT,
+        numbers VARCHAR(20) NOT NULL,
+        name VARCHAR(20) NOT NULL,
+        email VARCHAR (20) );
 
     '''
 )
